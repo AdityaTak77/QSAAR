@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpeg');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.7); /* Adding opacity to improve readability */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome! </h1>
+        <a href="database.sql"></a>
+        <form method="post" action="connect.php">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address"><br><br>
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age"><br><br>
+            <label for="blood-group">Blood Group:</label><br>
+            <input type="text" id="blood-group" name="blood-group"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+            <input type="submit" name="Signup" value="Signup">
+            <button type="button" onclick="location.href='appointment.html'">Already a User</button>
+        </form>
+    </div>
+</body>
+</html>
